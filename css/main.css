@@ -1,0 +1,486 @@
+@import "reset.css";
+@import "fonts.css";
+
+body {
+    background-color: #000;       /* Schwarzer Hintergrund */
+    color: #fff;                  /* Weisse Schrift */
+    font-family: "Outfit";
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* --- Navigation & Header --- */
+header {
+    width: 100%;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 5vw;
+    max-height: 50px;
+    min-height: 35px;   /* ✅ verhindert, dass das Logo zu klein wird */
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #aaa;
+}
+
+/* --- Hero Section --- */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 10%;
+    flex-wrap: wrap;
+}
+
+.introduction {
+    max-width: 500px;
+    margin: auto auto;
+}   
+
+.guete_bonjour_title {
+    width: 100%;    
+}
+
+.introduction h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.luca_cutout_hero {
+    width: 500px;
+    max-width: 40%;
+}
+
+.projektli {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* Alle Boxes horizontal zentrieren */
+    gap: 3rem;
+    padding: 4rem 10%;
+}
+
+.projektli_title {
+    width: 400px;
+}
+
+.project_box {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1000px;
+    gap: 2rem;
+    text-align: left;
+    text-decoration: none;       /* kein Unterstrich */
+    color: inherit;              /* Textfarbe beibehalten */
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    border-radius: 10px;
+}
+
+.project_box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.05);
+}
+
+.project_box img {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project_box .overview {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project_box .overview h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project_box .overview p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.project_box .overview .mehr {
+    display: inline-block;
+    margin-top: 0.6rem;
+    border-bottom: 1px solid #fff;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.project_box:hover .overview .mehr {
+    color: #aaa;
+    border-color: #aaa;
+}
+
+/* --- Mehr Projektli Section --- */
+.mehr_projektli {
+    text-align: center;
+}
+
+.mehr_projektli img {
+    width: 350px;
+}
+
+.ueber_mich {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;                  /* Abstand zwischen Bild und Text */
+    padding: 0, 10%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.luca_cutout_ueber_mich {
+    width: 50%;                 /* ✅ Größer auf grossen Bildschirmen */
+    max-width: 445px;           /* ✅ Mehr Präsenz im Desktop-Layout */
+    height: auto;
+    display: block;
+}
+
+.ueber_mich_text {
+    width: 45%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* ✅ zentriert das GIF und den Text */
+    justify-content: center;
+    text-align: left;
+    gap: 2rem;
+}
+
+.ueber_mich_gif {
+    width: 60%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;           /* ✅ GIF horizontal zentrieren */
+}
+
+.ueber_mich_text p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #fff;
+    text-align: left;
+    width: 100%;              /* sorgt für sauberen Textfluss */
+}
+
+/* --- Kontakt-Seite --- */
+.kontakt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;         /* ✅ zentriert alles horizontal */
+    justify-content: center;
+    text-align: center;
+    padding: 6rem 2rem;
+    gap: 2.5rem;
+    min-height: 80vh;            /* etwas vertikalen Raum schaffen */
+}
+
+.kontakt_gif {
+    width: 60%;
+    max-width: 320px;
+    height: auto;
+}
+
+.kontakt_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.kontakt_info p {
+    margin: 0;
+}
+
+.kontakt_info a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    transition: all 0.3s ease;
+}
+
+.kontakt_info a:hover {
+    color: #aaa;
+    border-color: #aaa;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #000;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.project_section {
+    padding: 4rem 15% 0rem 15%; 
+}
+
+.project_section a {
+  color: white;
+  text-decoration: underline; /* oder none, falls du keine Unterstreichung willst */
+  transition: color 0.3s ease;
+}
+
+.project_section a:hover {
+  color: #ccc; /* etwas helleres Grau beim Hover-Effekt */
+}
+
+.project_thumbnail {
+    width: 100%;
+    margin-bottom: 2rem
+}
+
+.video_wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 Seitenverhältnis */
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.video_wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;       /* nicht breiter als Full HD */
+    max-height: 1080px;      /* Begrenzung auf 1080p */
+    aspect-ratio: 16 / 9;    /* korrektes Seitenverhältnis */
+    margin: 0 auto 3rem auto; /* zentriert und Abstand unten */
+    overflow: hidden;
+    border-radius: 10px;      /* optional: sanfte Abrundung */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.project_gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.project_gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+.project_gallery img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
+}
+
+.lightbox {
+    display: none; /* Unsichtbar bis aktiviert */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    cursor: zoom-out;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+    transition: transform 0.4s ease;
+}
+
+.lightbox img:hover {
+    transform: scale(1.02);
+}
+
+a {
+    color: white;
+}
+a:hover {
+    color: #cccccc;
+}
+
+/* --- Responsives Design --- */
+
+
+/* --- Hero Layout Fix für Desktop (900px+) --- */
+
+@media (max-width: 1050px){
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 900px) {
+
+
+    .hero {
+        padding: 0;
+    }
+
+   .project_box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .project_box img,
+    .project_box .overview {
+        width: 100%;
+    }
+
+    .overview {
+        width: 100%;   
+    }
+
+    .ueber_mich {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 8%;
+        gap: 3rem;
+    }
+
+    .luca_cutout_ueber_mich {
+        width: 70%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .ueber_mich_text {
+        width: 100%;
+        align-items: center;
+    }
+
+    .ueber_mich_gif {
+        width: 70%;
+        max-width: 280px;
+    }
+
+    .ueber_mich_text p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .navigation {
+        flex-direction: column;    /* Logo oben, Navigation darunter */
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;               /* etwas Abstand zwischen Logo und Menü */
+    }
+
+    nav ul {
+        flex-direction: row;       /* Links nebeneinander */
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;                 /* gleicher Abstand wie im Desktop-Layout */
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    .kontakt {
+        padding: 4rem 1rem;
+        gap: 2rem;
+    }
+
+    .kontakt_gif {
+        width: 70%;
+        max-width: 260px;
+    }
+
+    .kontakt_info {
+        font-size: 1.1rem;
+        gap: 1rem;
+    }
+
+    .luca_cutout_hero {
+        max-width: 70%;
+    }
+
+    .project_box img {
+        width: 80%;
+    }
+
+    .ueber_mich {
+        padding: 0rem 8%;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        padding: 1.5rem 0.5rem;
+    }
+
+    .project_section {
+        padding: 0 15% 0 15%;
+    }
+}

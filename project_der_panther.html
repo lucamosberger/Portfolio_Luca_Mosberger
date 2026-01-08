@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="img/portfolio_favicon.png" sizes="64x64">
+    <title>Der Panther | Luca Mosberger</title>
+</head>
+
+<body>
+
+    <header>
+
+        <section class="navigation">
+
+            <a href="index.html">
+                <img src="img/logo.gif" class="logo">
+            </a>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="ueber_mich.html">über mich</a>
+                    </li>
+                    <li>
+                        <a href="kontakt.html">kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </section>
+
+    </header>
+
+    <section class="project_section">
+
+        <img src="img/gallery/dp10.jpg" class="project_thumbnail">
+
+        <h1>Der Panther (2025)</h1>
+        <p>Kurzfilm, 3 Minuten <br>
+        Mit Lukas Hohmeister und Moritz Kappeler <br>
+        Kamera, Licht, Postproduktion <br> <br>
+
+        Aus der Idee, ein Gedicht zu verfilmen, entstand unser Kurzfilm «Der Panther». 
+        Unsere moderne Interpretation von Rainer Maria Rilkes Klassiker deutet die innere Gefangenschaft und Isolation des Panthers im Gedicht als Allegorie für Sucht. 
+        Hinter digitalen Gitterstäben verliert unsere Protagonistin, gespielt von Nora Bach, ihre Freiheit. <br> <br>
+
+        Das Projekt entstand 2025 im Rahmen meines Multimedia Production Studiums gemeinsam mit Lukas Hohmeister und Moritz Kappeler. 
+        Aufgrund der Idee von Lukas, Rilkes Gedicht zu verfilmen, entschieden wir uns für einen Ansatz mit starkem Kunstlicht, Makroaufnahmen und abstrakten Schattenwürfen. 
+        Wir möchten uns ganz herzlich bei unserer Protagonistin Nora Bach bedanken, deren tolle schauspielerische Leistung unser Projekt zum Leben erweckt hat.
+        Infos zur Veröffentlichung folgen!</p>
+
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                <img id="lightbox-img" src="" alt="Vergrössertes Bild">
+            </div>
+
+        <div class="project_gallery">
+                <img src="img/gallery/dp1.jpg" alt="Der Panther – Szene 1 "onclick="openLightbox(this)">
+                <img src="img/gallery/dp3.jpg" alt="Der Panther – Szene 3" onclick="openLightbox(this)">
+                <img src="img/gallery/dp5.jpg" alt="Der Panther – Szene 5" onclick="openLightbox(this)">
+                <img src="img/gallery/dp10.jpg" alt="Der Panther – Szene 10" onclick="openLightbox(this)">
+                <img src="img/gallery/dp6.jpg" alt="Der Panther – Szene 6" onclick="openLightbox(this)">
+                <img src="img/gallery/dp7.jpg" alt="Der Panther – Szene 7" onclick="openLightbox(this)">
+                <img src="img/gallery/dp8.jpg" alt="Der Panther – Szene 8" onclick="openLightbox(this)">
+                <img src="img/gallery/dp9.jpg" alt="Der Panther – Szene 9" onclick="openLightbox(this)">
+                <img src="img/gallery/dp11.jpg" alt="Der Panther – Szene 11" onclick="openLightbox(this)">
+            
+            </div>
+
+    </section>
+    
+
+    <script>
+        function openLightbox(imgElement) {
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        lightboxImg.src = imgElement.src;
+        lightbox.style.display = "flex";
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById("lightbox");
+            lightbox.style.display = "none";
+        }
+
+    </script>
+
+    <footer>
+        <p>© 2025 Luca Mosberger. Alle Rechte vorbehalten.</p>
+    </footer>
+
+</body> 

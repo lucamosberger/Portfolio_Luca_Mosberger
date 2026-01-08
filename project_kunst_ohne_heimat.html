@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="img/portfolio_favicon.png" sizes="64x64">
+    <title>Kunst ohne Heimat | Luca Mosberger</title>
+</head>
+
+<body>
+
+    <header>
+
+        <section class="navigation">
+
+            <a href="index.html">
+                <img src="img/logo.gif" class="logo">
+            </a>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="ueber_mich.html">Über mich</a>
+                    </li>
+                    <li>
+                        <a href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </section>
+
+    </header>
+
+    <main>
+
+        <section class="project_section">
+
+          
+
+            <div class="video_wrapper">
+                <iframe 
+                src="https://www.youtube.com/embed/AppCCxdgP7w" 
+                title="Kunst ohne Heimat"                    frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+                </iframe>
+            </div>
+
+            <h1>Kunst ohne Heimat</h1>
+
+             <p>
+            Portraitfilm, 10 Minuten<br>
+            Mit Lukas Hohmeister, Carolina Resta, Harun Kahmaran, Fausto Pellegrini<br>
+            Co-Regie, Konzeption, Interview, Postproduction<br><br>
+
+            2024 entstand im Rahmen meines Multimedia Production Studiums ein 10-minütiger Portraitfilm. 
+            Die BLO Ateliers, Berlins grösster Artist Space, bestehen aus über 90 Kunstschaffenden in verschiedensten Disziplinen. 
+            Die 64 Ateliers befinden sich alle auf einem stillgelegten Bahngelände. 
+            Völlig aus dem Nichts hatte die Deutsche Bahn den BLO-Mitgliedern 2024 den Mietvertrag gekündigt, 
+            was viele von ihnen nicht nur der Möglichkeit beraubte, ihre Kunst zu schaffen, 
+            sondern auch ihrer Existenzgrundlage. 
+            Wir durften die Kunstschaffenden für eine Woche begleiten und in ihren Bemühungen um die Rettung der BLO Ateliers portraitieren. <br><br>
+
+            Der Film entstand gemeinsam mit vier Mitstudierenden im «Modul Audiovisuelles Erzählen». 
+            Meine Aufgabenbereiche lagen hauptsächlich in der Konzeption, Kommunikation und Organisation, 
+            Co-Regie mit Carolina Resta, Interviewführung und in der Postproduction. 
+            </p>
+
+            <div class="project_gallery">
+                <img src="img/gallery/still_koh1.jpg" alt="Kunst ohne Heimat – Szene 1 "onclick="openLightbox(this)">
+                <img src="img/gallery/still_koh3.jpg" alt="Kunst ohne Heimat – Szene 3" onclick="openLightbox(this)">
+                <img src="img/gallery/still_koh4.jpg" alt="Kunst ohne Heimat – Szene 4" onclick="openLightbox(this)">
+                <img src="img/gallery/still_koh5.jpg" alt="Kunst ohne Heimat – Szene 5" onclick="openLightbox(this)">
+                <img src="img/gallery/still_koh6.jpg" alt="Kunst ohne Heimat – Szene 6" onclick="openLightbox(this)">
+                <img src="img/gallery/still_koh7.jpg" alt="Kunst ohne Heimat – Szene 7" onclick="openLightbox(this)">
+                <img src="img/gallery/still_koh8.jpg" alt="Kunst ohne Heimat – Szene 8" onclick="openLightbox(this)">
+                <img src="img/gallery/still_koh9.jpg" alt="Kunst ohne Heimat – Szene 9" onclick="openLightbox(this)">
+                <img src="img/gallery/still_koh10.jpg" alt="Kunst ohne Heimat – Szene 10" onclick="openLightbox(this)">
+                <img src="img/gallery/still_koh12.jpg" alt="Kunst ohne Heimat – Szene 11" onclick="openLightbox(this)">
+                <img src="img/gallery/still_koh13.jpg" alt="Kunst ohne Heimat – Szene 12" onclick="openLightbox(this)">
+                <img src="img/gallery/still_koh14.jpg" alt="Kunst ohne Heimat – Szene 13" onclick="openLightbox(this)">
+                <img src="img/gallery/still_koh15.jpg" alt="Kunst ohne Heimat – Szene 14" onclick="openLightbox(this)">
+                <img src="img/gallery/still_koh16.jpg" alt="Kunst ohne Heimat – Szene 15" onclick="openLightbox(this)">
+                <img src="img/gallery/still_koh17.jpg" alt="Kunst ohne Heimat – Szene 16" onclick="openLightbox(this)">
+                <img src="img/gallery/still_koh18.jpg" alt="Kunst ohne Heimat – Szene 17" onclick="openLightbox(this)">
+                <img src="img/gallery/still_koh20.jpg" alt="Kunst ohne Heimat – Szene 18" onclick="openLightbox(this)">
+            </div>
+
+            <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                <img id="lightbox-img" src="" alt="Vergrössertes Bild">
+            </div>
+
+        </section>
+
+    
+
+        <footer>
+            <p>© 2025 Luca Mosberger. Alle Rechte vorbehalten.</p>
+        </footer>
+
+    </main>
+
+    <script>
+        function openLightbox(imgElement) {
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        lightboxImg.src = imgElement.src;
+        lightbox.style.display = "flex";
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById("lightbox");
+            lightbox.style.display = "none";
+        }
+
+    </script>
+    
+</body>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="img/portfolio_favicon.png" sizes="64x64">
+    <title>Hero's Journey | Luca Mosberger</title>
+</head>
+
+<body>
+
+    <header>
+
+        <section class="navigation">
+
+            <a href="index.html">
+                <img src="img/logo.gif" class="logo">
+            </a>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="ueber_mich.html">Über mich</a>
+                    </li>
+                    <li>
+                        <a href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </section>
+
+    </header>
+
+    <main>
+
+        <section class="project_section">
+
+          
+
+            <div class="video-container">
+                <iframe 
+                 src="https://player.vimeo.com/video/1045082306?badge=0&autopause=0&player_id=0&app_id=58479" 
+                 frameborder="0" 
+                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                title="Hero's Journey - Digezz Projekt HS24">
+                </iframe>
+            </div>
+
+            <script src="https://player.vimeo.com/api/player.js"></script>
+
+            <h1>Hero's Journey</h1>
+
+            <p>2025<br>
+            Für Mc Hero <br>
+            Videoformat, 2 Minuten<br>
+            Regie, Videoproduktion, Social Media, Konzeption<br> <br>
+            
+            Für das grosse Tour-Heimspiel im Komplex 457 des Rappers Mc Hero durfte ich kurzes Video produzieren, in der der Künstler seine eindrückliche Geschichte erzählt. 
+            Er wuchs in der tristen Zürcher Lochergut-Siedlung auf und wurde früh mit Gewalt, Kriminalität und schweren Schicksalsschlägen wie dem Verlust von Kindheitsfreunden konfrontiert. 
+            Im Jugendalter geriet er in die Ultraszene und in eine Spirale aus Gewalt und Chaos, die ihn beinahe Jahre hinter Gitter gebracht hätte. 
+            Die Musik und Kampfsport halfen ihm, seine Aggressionen in etwas Konstruktives zu kanalisieren. 
+            Seine Disziplin und Leidenschaft für Musik retteten ihn nicht nur aus der Kriminalität, sondern machten ihn zum Rapstar mit einem Soloalbum an der Chartspitze. 
+            Heute zählt er zu den erfolgreichsten und prägendsten Strassenrappern des Landes.
+
+            Diese Story wollte ich unbedingt in Videoform erzählen. 
+            Als sich im Rahmen seines EP-Rollouts die Möglichkeit ergab, konzipierte ich ein knapp 2-minütiges Videoprojekt. 
+            Heros Jugendschauplätze, der Archetyp der «Heldenreise» und diverse Musikvideos dienten mir dabei als Inspiration. 
+            Mit dynamischen Hyperlapses, hektischen Cuts und einem rauen Look wollte ich die Stimmung der Lochergut-Siedlung einfangen, und ihn selbst seine Geschichte erzählen lassen. 
+            Ein zweites, etwas weniger aufwendiges <a href="https://www.instagram.com/reel/DEcfzu7CHdj/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D">Promo-Video </a> entstand relativ spontan und wurde am gleichen Tag noch gefilmt. 
+            Darin machten auch die Zürcher Nachwuchs-Streetrapper DVW, NAIJA03, Sic4rio, Pisko und Alvo03 ein Cameo. 
+            Ich bin sehr stolz auf die Zusammenarbeit und dankbar für Mc Heros Vertrauen in meine Idee.
+
+            </p>
+
+            <div class="project_gallery">
+                <img src="img/gallery/hero_still1.jpg" alt="Hero's Journey – Szene 1" onclick="openLightbox(this)">
+                <img src="img/gallery/hero_still2.jpg" alt="Hero's Journey – Szene 2" onclick="openLightbox(this)">
+                <img src="img/gallery/hero_still4.jpg" alt="Hero's Journey – Szene 4" onclick="openLightbox(this)">
+                <img src="img/gallery/hero_still5.jpg" alt="Hero's Journey – Szene 5" onclick="openLightbox(this)">
+                <img src="img/gallery/hero_still6.jpg" alt="Hero's Journey – Szene 6" onclick="openLightbox(this)">
+                <img src="img/gallery/hero_still9.jpg" alt="Hero's Journey – Szene 9" onclick="openLightbox(this)">
+                <img src="img/gallery/hero_still10.jpg" alt="Hero's Journey – Szene 10" onclick="openLightbox(this)">
+                <img src="img/gallery/hero_still11.jpg" alt="Hero's Journey – Szene 11" onclick="openLightbox(this)">
+                <img src="img/gallery/hero_still12.jpg" alt="Hero's Journey – Szene 12" onclick="openLightbox(this)">
+            </div>
+
+            <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                <img id="lightbox-img" src="" alt="Vergrössertes Bild">
+            </div>
+
+        </section>
+
+    
+
+        <footer>
+            <p>© 2025 Luca Mosberger. Alle Rechte vorbehalten.</p>
+        </footer>
+
+    </main>
+
+    <script>
+        function openLightbox(imgElement) {
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        lightboxImg.src = imgElement.src;
+        lightbox.style.display = "flex";
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById("lightbox");
+            lightbox.style.display = "none";
+        }
+
+    </script>
+    
+</body>

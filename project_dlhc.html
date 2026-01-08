@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="img/portfolio_favicon.png" sizes="64x64">
+    <title>Don't let him cook! | Luca Mosberger</title>
+</head>
+
+<body>
+
+    <header>
+
+        <section class="navigation">
+
+            <a href="index.html">
+                <img src="img/logo.gif" class="logo">
+            </a>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="ueber_mich.html">über mich</a>
+                    </li>
+                    <li>
+                        <a href="kontakt.html">kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </section>
+
+    </header>
+
+
+    <section class="project_section">
+
+        <img src="img/dlhc_thumbnail.jpg" class="project_thumbnail">
+
+        <h1>Don’t let him cook!</h1>
+        <p>2025<br>
+        Mit Noah Koroma<br>
+        Regie, Konzeption, Kamera, Postproduktion<br> <br>
+
+        Ich finde Essen ziemlich toll, weswegen mein Algorithmus mir wohl auch den Feed mit Kochvideos zuspammt, die ich zwar alle schaue, aber nie koche. 
+        Um meinen eigenen Beitrag zu dieser nutzlosen Flut an Food-Content zu leisten, warb ich meinen guten Freund Noah an, dessen hochmotivierte, aber durchaus chaotische Energie ich mir für das Video wünschte. 
+        Auch er findet Essen toll, und tatsächlich kocht er auch gar nicht schlecht. 
+        Vorausgesetzt, er fackelt die Küche dabei nicht ab. 
+
+        So entstand «Don’t let him cook!», ein Kochvideo direkt aus der Hölle. 
+        Als Meister der japanischen Küche kann man gut auch mal das Samurai-Schwert zum Zwiebelhacken zücken. 
+        Ausserdem bin ich wohl der erste MMP-Student, der Käse auf seine (mit Klarsichtfolie geschütze!!!) Kamera geraffelt hat. 
+        Unsere Raclette-Burger-Kreation hat überraschend gut geschmeckt.
+        Das Video wird bald auf dieser Seite veröffentlicht.</p>
+
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                <img id="lightbox-img" src="" alt="Vergrössertes Bild">
+            </div>
+
+        <div class="project_gallery">
+                <img src="img/gallery/dlhc1.jpg" alt="DLHC – Szene 1 "onclick="openLightbox(this)">
+                <img src="img/gallery/dlhc2.jpg" alt="DLHC – Szene 2" onclick="openLightbox(this)">
+                <img src="img/gallery/dlhc4.jpg" alt="DLHC – Szene 4" onclick="openLightbox(this)">
+                <img src="img/gallery/dlhc5.jpg" alt="DLHC – Szene 5" onclick="openLightbox(this)">
+                <img src="img/gallery/dlhc6.jpg" alt="DLHC – Szene 6" onclick="openLightbox(this)">
+                <img src="img/gallery/dlhc8.jpg" alt="DLHC – Szene 8" onclick="openLightbox(this)">
+                <img src="img/gallery/dlhc11.jpg" alt="DLHC – Szene 11" onclick="openLightbox(this)">
+                <img src="img/gallery/dlhc13.jpg" alt="DLHC – Szene 13" onclick="openLightbox(this)">
+                <img src="img/gallery/dlhc15.jpg" alt="DLHC – Szene 15" onclick="openLightbox(this)">
+                <img src="img/gallery/dlhc16.jpg" alt="DLHC – Szene 16" onclick="openLightbox(this)">
+                <img src="img/gallery/dlhc17.jpg" alt="DLHC – Szene 17" onclick="openLightbox(this)">
+                <img src="img/gallery/dlhc18.jpg" alt="DLHC – Szene 18" onclick="openLightbox(this)">
+            </div>
+
+    </section>
+
+    <footer>
+            <p>© 2025 Luca Mosberger. Alle Rechte vorbehalten.</p>
+    </footer>
+
+</body>
+
+<script>
+        function openLightbox(imgElement) {
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        lightboxImg.src = imgElement.src;
+        lightbox.style.display = "flex";
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById("lightbox");
+            lightbox.style.display = "none";
+        }
+</script>

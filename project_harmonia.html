@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="img/portfolio_favicon.png" sizes="64x64">
+    <title>Harmonia. | Luca Mosberger</title>
+</head>
+
+<body>
+
+    <header>
+
+        <section class="navigation">
+
+            <a href="index.html">
+                <img src="img/logo.gif" class="logo">
+            </a>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="ueber_mich.html">über mich</a>
+                    </li>
+                    <li>
+                        <a href="kontakt.html">kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </section>
+
+    </header>
+
+    <main>
+
+        <section class="project_section">
+
+            <img src="img/harmonia_thumbnail.jpg" class="project_thumbnail">
+
+            <h1>HARMONIA. (2026)</h1>
+            <p>Dokumentarfilm, 33 Minuten <br>
+            Mit Cédric Züllig<br>
+            Co-Regie, Konzeption, Kamera, Postproduktion<br><br>
+
+            2025 filmte ich mit Cédric Züllig einen Dokumentarfilm über die Handpan, eine linsenförmige Klangskulptur, deren Zukunft aktuell vor dem Berner Handelsgericht ausgefochten wird.
+            «Harmonia.» handelt von der magischen Anziehungskraft des ufo-ähnlichen Instruments, von Kunst und Kommerz und einem ungewöhnlichen Rechtskonflikt.
+            Der Film wurde von Cédric Züllig und mir im Rahmen unseres Studiums eigenständig konzipiert und umgesetzt und wird 2026 erscheinen.
+            Weitere Infos zur Veröffentlichung folgen. 
+
+            
+            <div class="project_gallery">
+                <img src="img/gallery/Grading_Still14.jpg" alt="Harmonia. – Szene 1 "onclick="openLightbox(this)">
+                <img src="img/gallery/Grading_Still1.jpg" alt="Harmonia. – Szene 2" onclick="openLightbox(this)">
+                <img src="img/gallery/Grading_Still10.jpg" alt="Harmonia. – Szene 3" onclick="openLightbox(this)">
+                <img src="img/gallery/Grading_Still4.jpg" alt="Harmonia. – Szene 4" onclick="openLightbox(this)">
+                <img src="img/gallery/Grading_Still5.jpg" alt="Harmonia. – Szene 5" onclick="openLightbox(this)">
+                <img src="img/gallery/Grading_Still6.jpg" alt="Harmonia. – Szene 6" onclick="openLightbox(this)">
+                <img src="img/gallery/Grading_Still7.jpg" alt="Harmonia. – Szene 7" onclick="openLightbox(this)">
+                <img src="img/gallery/Grading_Still11.jpg" alt="Harmonia. – Szene 8" onclick="openLightbox(this)">
+                <img src="img/gallery/Grading_Still2.jpg" alt="Harmonia. – Szene 9" onclick="openLightbox(this)">
+            </div>
+
+            <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                <img id="lightbox-img" src="" alt="Vergrössertes Bild">
+            </div>
+
+        </section>
+
+         <footer>
+            <p>© 2025 Luca Mosberger. Alle Rechte vorbehalten.</p>
+        </footer>
+
+    </main>
+
+     <script>
+        function openLightbox(imgElement) {
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        lightboxImg.src = imgElement.src;
+        lightbox.style.display = "flex";
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById("lightbox");
+            lightbox.style.display = "none";
+        }
+
+    </script>
+
+</body>
+
+</html> 
