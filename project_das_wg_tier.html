@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="img/portfolio_favicon.png" sizes="64x64">
+    <title>Das WG-Tier | Luca Mosberger</title>
+</head>
+
+<body>
+
+    <header>
+
+        <section class="navigation">
+
+            <a href="index.html">
+                <img src="img/logo.gif" class="logo">
+            </a>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="ueber_mich.html">über mich</a>
+                    </li>
+                    <li>
+                        <a href="kontakt.html">kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </section>
+
+    </header>
+
+    <section class="project_section">
+
+        <img src="img/wg_tier_thumbnail.jpg" class="project_thumbnail">
+
+        <h1>Das WG-Tier</h1>
+        <p>Bilderbuch <br>
+        Konzeption, Zeichnungen, Fotografie, Design <br> <br>
+
+        Ich bin mit ein paar meiner besten Freund:innen in eine WG gezogen. 
+        Lange haben wir im Vorfeld schon diskutiert, ob wir uns ein WG-Haustier anschaffen sollten. 
+        Anstatt einen konstruktiven Beitrag zur Diskussion zu leisten, 
+        habe ich dieses Werk hier beigesteuert. 
+        Wie wohl so ein Eisbär oder eine afrikanische Riesenschnecke ins WG-Leben passt? 
+        Wir werden es nie erfahren, denn wir haben uns (zum Glück) für zwei junge Katzen entschieden und sie sehr, sehr lieb gewonnen. 
+
+        «Das WG-Tier» entstand im Rahmen des Moduls «Visualisieren» in meinem Multimedia Production-Studium. 
+        Das Buch wurde einmalig für meine WG-Friends gedruckt. 
+
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                <img id="lightbox-img" src="" alt="Vergrössertes Bild">
+            </div>
+
+        <div class="project_gallery">
+                <img src="img/gallery/wgt1.jpg" alt="Das WG-Tier - Seite 1" onclick="openLightbox(this)">
+                <img src="img/gallery/wgt2.jpg" alt="Das WG-Tier - Seite 1" onclick="openLightbox(this)">
+                <img src="img/gallery/wgt3.jpg" alt="Das WG-Tier - Seite 1" onclick="openLightbox(this)">
+                <img src="img/gallery/wgt4.jpg" alt="Das WG-Tier - Seite 1" onclick="openLightbox(this)">
+                <img src="img/gallery/wgt5.jpg" alt="Das WG-Tier - Seite 1" onclick="openLightbox(this)">
+                <img src="img/gallery/wgt6.jpg" alt="Das WG-Tier - Seite 1" onclick="openLightbox(this)">
+                <img src="img/gallery/wgt7.jpg" alt="Das WG-Tier - Seite 1" onclick="openLightbox(this)">
+                <img src="img/gallery/wgt8.jpg" alt="Das WG-Tier - Seite 1" onclick="openLightbox(this)">
+                <img src="img/gallery/wgt9.jpg" alt="Das WG-Tier - Seite 1" onclick="openLightbox(this)">
+                <img src="img/gallery/wgt10.jpg" alt="Das WG-Tier - Seite 1" onclick="openLightbox(this)">
+                <img src="img/gallery/wgt11.jpg" alt="Das WG-Tier - Seite 1" onclick="openLightbox(this)">
+                <img src="img/gallery/wgt12.jpg" alt="Das WG-Tier - Seite 1" onclick="openLightbox(this)">
+                <img src="img/gallery/wgt13.jpg" alt="Das WG-Tier - Seite 1" onclick="openLightbox(this)">
+                <img src="img/gallery/wgt14.jpg" alt="Das WG-Tier - Seite 1" onclick="openLightbox(this)">
+            
+            </div>
+
+    </section>
+    
+
+    <script>
+        function openLightbox(imgElement) {
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        lightboxImg.src = imgElement.src;
+        lightbox.style.display = "flex";
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById("lightbox");
+            lightbox.style.display = "none";
+        }
+
+    </script>
+
+    <footer>
+        <p>© 2026 Luca Mosberger. Alle Rechte vorbehalten.</p>
+    </footer>
+
+</body> 
