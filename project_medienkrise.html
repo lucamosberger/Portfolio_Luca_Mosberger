@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="img/portfolio_favicon.png" sizes="64x64">
+    <title>Harmonia. | Luca Mosberger</title>
+</head>
+
+<body>
+
+    <header>
+
+        <section class="navigation">
+
+            <a href="index.html">
+                <img src="img/logo.gif" class="logo">
+            </a>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="ueber_mich.html">über mich</a>
+                    </li>
+                    <li>
+                        <a href="kontakt.html">kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </section>
+
+    </header>
+
+    <main>
+
+        <section class="project_section">
+
+            <div class="video_wrapper">
+                <iframe 
+                src="https://www.youtube.com/watch?v=By3-oojAll0" 
+                title="Wir haben eine Medienkrise"                    frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+                </iframe>
+            </div>
+
+            <h1>Wir haben eine Medienkrise</h1>
+            <p>Dokumentarfilm, 55 Minuten <br>
+            Mit Aaron Täschler<br>
+            Regie, Drehbuch, Konzeption, Kamera, Postproduction<br><br>
+
+            Das Vertrauen in die News-Medien ist rückläufig, sogar in der schönen, heilen Schweiz. 
+            Besonders der öffentliche Rundfunk steht hierzulande wie auch weltweit unter politischem Druck. 
+            Der Schweizer SRG wird aus rechtsbürgerlichen Kreisen tendenziöse Berichterstattung vorgeworfen. 
+            Eine Halbierung der Gebühren wird gefordert. 
+            Eine derart drastische Budget-Reduktion hätte zur Folge, dass über 3000 hochqualifizierte Medienschaffende auf den Markt entlassen werden. 
+            Für die beiden Multimedia-Studenten Aaron und Luca ist das im Bachelor-Semester keine so rosige Aussicht. <br><br>
+
+            Was hat es mit dem grossen Misstrauen von rechts und dem weltweiten Angriff auf den öffentlichen Rundfunk auf sich? 
+            Bröckelt unsere vierte Säule der Demokratie? 
+            Sind wir nach dem Studium arbeitslos? 
+            Wir suchen nach Antworten. <br><br>
+
+            Auf einer chaotischen Odyssee quer durch die Schweiz treffen wir Akteur:innen aus der Politik (u.a. SP-Nationalrätin Jaqueline Badran und SVP-Nationalrat Andreas Glarner), der SRG (Public Affairs Leiterin Stephanie Jutzi und Reporter Donat Hofer) und der Wissenschaft (Prof. Vinzenz Wyss) und tauchen ein in eine hitzige Debatte um die Rolle und Verantwortung des öffentlichen Rundfunks.
+            «Wir haben eine Medienkrise» war mein Bachelor-Lehrprojekt im Multimedia Production Studium. 
+
+            
+            <div class="project_gallery">
+                <img src="img/gallery/medienkrise1.jpg" alt="" onclick="openLightbox(this)">
+                <img src="img/gallery/medienkrise2.jpg" alt="" onclick="openLightbox(this)">
+                <img src="img/gallery/medienkrise3.jpg" alt="" onclick="openLightbox(this)">
+                <img src="img/gallery/medienkrise4.jpg" alt="" onclick="openLightbox(this)">
+                <img src="img/gallery/medienkrise5.jpg" alt="" onclick="openLightbox(this)">
+                <img src="img/gallery/medienkrise6.jpg" alt="" onclick="openLightbox(this)">
+                <img src="img/gallery/medienkrise7.jpg" alt="" onclick="openLightbox(this)">
+                <img src="img/gallery/medienkrise8.jpg" alt="" onclick="openLightbox(this)">
+                <img src="img/gallery/medienkrise9.jpg" alt="" onclick="openLightbox(this)">
+                <img src="img/gallery/medienkrise10.jpg" alt="" onclick="openLightbox(this)">
+                <img src="img/gallery/medienkrise11.jpg" alt="" onclick="openLightbox(this)">
+                <img src="img/gallery/medienkrise12.jpg" alt="" onclick="openLightbox(this)">
+                <img src="img/gallery/medienkrise13.jpg" alt="" onclick="openLightbox(this)">
+            </div>
+
+            <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                <img id="lightbox-img" src="" alt="Vergrössertes Bild">
+            </div>
+
+        </section>
+
+         <footer>
+            <p>© 2026 Luca Mosberger. Alle Rechte vorbehalten.</p>
+        </footer>
+
+    </main>
+
+     <script>
+        function openLightbox(imgElement) {
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        lightboxImg.src = imgElement.src;
+        lightbox.style.display = "flex";
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById("lightbox");
+            lightbox.style.display = "none";
+        }
+
+    </script>
+
+</body>
+
+</html> 
